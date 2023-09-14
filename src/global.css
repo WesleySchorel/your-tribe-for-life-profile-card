@@ -1,4 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 body {
     color: #ffff;
-    background-color: #141420;
+    background-color: #72a3c6;
+}
+
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 5.5rem;
+    line-height: 5rem;
+    text-shadow: 0.5rem 0.5rem rgba(210, 104, 104, 1);
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+a {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 0 1rem 0 0;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgba(210, 104, 104, 1);
+    background-color: #f4db9c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 7px 7px 0px 0px rgba(210,104,104,1);
+}
+
+a:hover {
+    background-color: #f4db9c;
+    transform: rotate(3deg);
+}
+
+a:active {
+    transform: rotate(3deg);
 }

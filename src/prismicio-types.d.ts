@@ -77,6 +77,16 @@ export type AllDocumentTypes = HomepageDocument;
  */
 export interface IntroSliceDefaultPrimary {
   /**
+   * avatar field in *Intro → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: intro.primary.avatar
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  avatar: prismic.ImageField<never>;
+
+  /**
    * title field in *Intro → Primary*
    *
    * - **Field Type**: Text
@@ -95,6 +105,16 @@ export interface IntroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   text: prismic.KeyTextField;
+
+  /**
+   * subtext field in *Intro → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: intro.primary.subtext
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtext: prismic.KeyTextField;
 }
 
 /**

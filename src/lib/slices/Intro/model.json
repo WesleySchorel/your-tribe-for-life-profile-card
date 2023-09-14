@@ -12,6 +12,14 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "avatar",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "title": {
           "type": "Text",
           "config": {
@@ -23,6 +31,13 @@
           "type": "Text",
           "config": {
             "label": "text",
+            "placeholder": ""
+          }
+        },
+        "subtext": {
+          "type": "Text",
+          "config": {
+            "label": "subtext",
             "placeholder": ""
           }
         }
