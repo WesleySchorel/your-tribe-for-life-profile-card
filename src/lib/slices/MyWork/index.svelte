@@ -1,5 +1,5 @@
 <script>
-  /** @type {import("@prismicio/client").Content.IntroSlice} */
+  /** @type {import("@prismicio/client").Content.MyWorkSlice} */
   export let slice;
 </script>
 
@@ -8,17 +8,14 @@
   data-slice-variation={slice.variation}
 >
 
-<div class="intro">
-  <div class="avatar">
-   <img src={slice.primary.avatar.url} alt="" />
+<div class="mywork">
+  <div class="website">
+    <img src={slice.primary.website1.url} alt="" />
   </div>
 
   <div class="text">
-    <h1>{slice.primary.title}</h1>
-    <p><span>{slice.primary.text}</span></p>
-    <p>{slice.primary.subtext}</p>
-    <a href="/MyWork">My Work</a>
-    <a href="/Contact">Contact</a>
+    <h2>{slice.primary.title}</h2>
+    <a href="https://wesleyschorel.github.io/What-color-is-this/" target="_blank">Visit Website</a>
   </div>
 </div>
 
@@ -26,11 +23,11 @@
 
 
 <style>
-.intro {
-  margin-top: 2rem;
+.mywork {
+  background-color: #c5bae8;
 }
 
-.intro {  
+.mywork {  
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   grid-template-rows: 1fr;
@@ -40,7 +37,7 @@
   grid-template-areas: "avatar text";
 }
 
-.avatar { 
+.website { 
   grid-area: avatar;
   padding: 3rem;
   display: flex;
@@ -48,10 +45,9 @@
 }
 
 img {
-  border-radius: 50%;
-  width: 80%;
+  width: 100%;
   background: repeating-radial-gradient(100000px 10000px at 103000px 54000px,#ff5f9c 0 .0001%,#fff 0 0.002%);
-  box-shadow: 10px 10px 0px 0px #ff5f9c;
+  box-shadow: 10px 10px 0px 0px #5c67af;
 }
 
 .text { 

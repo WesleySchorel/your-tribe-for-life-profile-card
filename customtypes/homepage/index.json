@@ -20,6 +20,15 @@
           "choices": {
             "intro": {
               "type": "SharedSlice"
+            },
+            "my_clients": {
+              "type": "SharedSlice"
+            },
+            "broadcast": {
+              "type": "SharedSlice"
+            },
+            "my_work": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -4,7 +4,11 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomepageDocumentDataSlicesSlice = IntroSlice;
+type HomepageDocumentDataSlicesSlice =
+  | IntroSlice
+  | MyClientsSlice
+  | BroadcastSlice
+  | MyWorkSlice;
 
 /**
  * Content for homepage documents
@@ -71,6 +75,51 @@ export type HomepageDocument<Lang extends string = string> =
   >;
 
 export type AllDocumentTypes = HomepageDocument;
+
+/**
+ * Primary content in *Broadcast → Primary*
+ */
+export interface BroadcastSliceDefaultPrimary {
+  /**
+   * broadcast field in *Broadcast → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: broadcast.primary.broadcast
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  broadcast: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Broadcast Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BroadcastSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BroadcastSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Broadcast*
+ */
+type BroadcastSliceVariation = BroadcastSliceDefault;
+
+/**
+ * Broadcast Shared Slice
+ *
+ * - **API ID**: `broadcast`
+ * - **Description**: Broadcast
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BroadcastSlice = prismic.SharedSlice<
+  "broadcast",
+  BroadcastSliceVariation
+>;
 
 /**
  * Primary content in *Intro → Primary*
@@ -144,6 +193,113 @@ type IntroSliceVariation = IntroSliceDefault;
  */
 export type IntroSlice = prismic.SharedSlice<"intro", IntroSliceVariation>;
 
+/**
+ * Primary content in *MyClients → Primary*
+ */
+export interface MyClientsSliceDefaultPrimary {
+  /**
+   * title field in *MyClients → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: my_clients.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * clients field in *MyClients → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: my_clients.primary.clients
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  clients: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for MyClients Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MyClientsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<MyClientsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *MyClients*
+ */
+type MyClientsSliceVariation = MyClientsSliceDefault;
+
+/**
+ * MyClients Shared Slice
+ *
+ * - **API ID**: `my_clients`
+ * - **Description**: MyClients
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MyClientsSlice = prismic.SharedSlice<
+  "my_clients",
+  MyClientsSliceVariation
+>;
+
+/**
+ * Primary content in *MyWork → Primary*
+ */
+export interface MyWorkSliceDefaultPrimary {
+  /**
+   * title field in *MyWork → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: my_work.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * website1 field in *MyWork → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: my_work.primary.website1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  website1: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for MyWork Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MyWorkSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<MyWorkSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *MyWork*
+ */
+type MyWorkSliceVariation = MyWorkSliceDefault;
+
+/**
+ * MyWork Shared Slice
+ *
+ * - **API ID**: `my_work`
+ * - **Description**: MyWork
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MyWorkSlice = prismic.SharedSlice<"my_work", MyWorkSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -158,10 +314,22 @@ declare module "@prismicio/client" {
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      BroadcastSlice,
+      BroadcastSliceDefaultPrimary,
+      BroadcastSliceVariation,
+      BroadcastSliceDefault,
       IntroSlice,
       IntroSliceDefaultPrimary,
       IntroSliceVariation,
       IntroSliceDefault,
+      MyClientsSlice,
+      MyClientsSliceDefaultPrimary,
+      MyClientsSliceVariation,
+      MyClientsSliceDefault,
+      MyWorkSlice,
+      MyWorkSliceDefaultPrimary,
+      MyWorkSliceVariation,
+      MyWorkSliceDefault,
     };
   }
 }

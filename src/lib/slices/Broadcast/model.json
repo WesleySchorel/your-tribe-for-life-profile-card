@@ -1,0 +1,26 @@
+{
+  "id": "broadcast",
+  "type": "SharedSlice",
+  "name": "Broadcast",
+  "description": "Broadcast",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "broadcast": {
+          "type": "Text",
+          "config": {
+            "label": "broadcast",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

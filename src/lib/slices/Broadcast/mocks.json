@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"broadcast": {
+				"__TYPE__": "FieldContent",
+				"value": "smaller",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
