@@ -36,3 +36,9 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Bronnen
+* https://github.com/joostf/skateboards
+* https://prismic.io/docs/svelte
+* https://prismic.io/academy/prismic-and-nextjs/1-overview/1-intro
+* https://www.youtube.com/playlist?list=PLUVZjQltoA3wnaQudcqQ3qdZNZ6hyfyhH
