@@ -33,4 +33,10 @@
     display: flex;
     justify-content: center;
   }
+
+  @media screen and (max-width: 480px) {
+      .broadcast {
+    width: 150vw;
+  }
+  }
 </style>

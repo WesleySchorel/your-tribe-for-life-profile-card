@@ -9,6 +9,9 @@
 
 body {
     background-color: #5dccdd;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circle-grid.svg);
+    background-size: cover, 100px 100px;
+    background-blend-mode: multiply;
 }
 
 h1 {
@@ -17,7 +20,8 @@ h1 {
     font-size: 5.5rem;
     line-height: 5rem;
     text-shadow: 0.5rem 0.7rem #5c67af;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+    ;
 }
 
 h2 {
@@ -26,13 +30,16 @@ h2 {
     font-size: 5rem;
     line-height: 5rem;
     text-shadow: 0.5rem 0.7rem #ff5f9c;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+    ;
 }
 
 p {
     font-family: sans-serif;
     font-size: 1.2rem;
     margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
 }
 
 p span {
@@ -65,3 +72,4 @@ a:hover {
 a:active {
     transform: rotate(3deg);
 }
+
