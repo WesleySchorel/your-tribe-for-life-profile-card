@@ -42,3 +42,5 @@ You can preview the production build with `npm run preview`.
 * https://prismic.io/docs/svelte
 * https://prismic.io/academy/prismic-and-nextjs/1-overview/1-intro
 * https://www.youtube.com/playlist?list=PLUVZjQltoA3wnaQudcqQ3qdZNZ6hyfyhH
+* https://www.okupter.com/blog/sveltekit-404-pages - Error page for Sveltekit
+* https://stackoverflow.com/questions/69321948/how-to-add-a-custom-404-page-and-a-different-error-page-for-other-errors-in-sv - Old & New way for error page sveltekit
