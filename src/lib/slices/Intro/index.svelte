@@ -43,7 +43,7 @@
 
   img {
     border-radius: 50%;
-    width: 80%;
+    width: 40rem;
     background: repeating-radial-gradient(
       100000px 10000px at 103000px 54000px,
       #ff5f9c 0 0.0001%,
@@ -75,7 +75,7 @@
     img {
     border-radius: 50%;
     width: auto;
-    height: 80%;
+    height: 30rem;
     background: repeating-radial-gradient(100000px 10000px at 103000px 54000px, #ff5f9c 0 0.0001%, #fff 0 0.002%);
     box-shadow: 10px 10px 0px 0px #ff5f9c;
   }
