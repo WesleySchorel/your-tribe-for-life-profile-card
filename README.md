@@ -14,7 +14,7 @@
 ## Beschrijving
 In dit project heb ik een visitekaartje uitgewerkt met Sveltekit & Prismic. Wanneer je de website opent wordt je begroet met een website waarop je informatie over mij kan vinden. Daaronder staat een sectie met mijn klanten en een andere sectie waarin je mijn gemaakte werk kan vinden. 
 
-Bekijk onze [website](https://snazzy-mousse-9b91fe.netlify.app/) en [wiki](https://github.com/WesleySchorel/your-tribe-for-life-profile-card/wiki)
+Bekijk onze [website](profile-card-wesley.netlify.app/) en [wiki](https://github.com/WesleySchorel/your-tribe-for-life-profile-card/wiki)
 
 ## Kenmerken
 
