@@ -16,8 +16,8 @@
       <h1>{slice.primary.title}</h1>
       <p><span>{slice.primary.text}</span></p>
       <p>{slice.primary.subtext}</p>
-      <a href="/MyWork">My Work</a>
-      <a href="/Contact">Contact</a>
+      <a href="#MyWork">My Work</a>
+      <a href="mailto:wesleyschorel@gmail.com?subject=Lets start working together!">Contact</a>
     </div>
   </div>
 </section>

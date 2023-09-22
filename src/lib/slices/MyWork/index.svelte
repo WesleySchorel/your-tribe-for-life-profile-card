@@ -7,7 +7,7 @@
   data-slice-type={slice.slice_type}
   data-slice-variation={slice.variation}
 >
-  <div class="mywork">
+  <div class="mywork" id="MyWork">
     <div class="website">
       <img src={slice.primary.website1.url} alt="" />
     </div>
